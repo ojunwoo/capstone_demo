@@ -124,10 +124,10 @@ Resources:
             sudo systemctl enable docker
 
             # Pull docker image
-            sudo docker pull ojunwoo/demo_app1:latest
+            sudo docker pull ojunwoo/testapp_1:latest
 
             # Run the docker container and expose port 80
-            sudo docker run -d -p 80:80 ojunwoo/demo_app1:latest
+            sudo docker run -d -p 80:80 ojunwoo/testapp_1:latest
 
   EC2Instance2:
     Type: "AWS::EC2::Instance"
@@ -155,10 +155,10 @@ Resources:
             sudo systemctl enable docker
 
             # Pull docker image
-            sudo docker pull ojunwoo/demo_app1:latest
+            sudo docker pull ojunwoo/testapp_1:latest
 
             # Run the docker container and expose port 80
-            sudo docker run -d -p 80:80 ojunwoo/demo_app1:latest
+            sudo docker run -d -p 80:80 ojunwoo/testapp_1:latest
 
 Outputs:
   VPCId:
